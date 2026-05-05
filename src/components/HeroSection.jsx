@@ -27,7 +27,7 @@ function HeroSection() {
             <Image src={img?.hero} alt="study img" width={500} height={200} />
 
             {/* student card */}
-            <div className="bg-white absolute bottom-56 rounded-md right-5 p-5 flex items-center gap-5 max-w-56">
+            <div className="bg-white hidden  absolute bottom-56 rounded-md right-5 p-5 sm:flex items-center gap-5 max-w-56">
               {/* icon */}
               <p className="bg-sky-100 w-12 h-12 rounded-full flex justify-center items-center">
                 <UserCheck size={20} className="" />

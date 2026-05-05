@@ -7,15 +7,14 @@ function Footer() {
   const iconMap = {
     address: <MapPin size={16} />,
     phone: <Phone size={16} />,
-    email: <Mail size={16} />
+    email: <Mail size={16} />,
   };
 
   return (
-    <footer className="bg-sky-50   mt-10">
+    <footer className="bg-sky-50 border-t border-sky-200">
       <Wrapper>
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between gap-8 py-8">
-          
           {/* Logo + Description */}
           <div className="max-w-sm">
             <div className="flex items-center gap-2 cursor-pointer">
@@ -35,8 +34,11 @@ function Footer() {
 
             <div className="space-y-2">
               {footerData?.map((item) => (
-                <div key={item.id} className="flex items-center gap-2 text-sm text-gray-700">
-                   <span className="text-sky-400">{iconMap[item.type]}</span>
+                <div
+                  key={item.id}
+                  className="flex items-center gap-2 text-sm text-gray-700"
+                >
+                  <span className="text-sky-400">{iconMap[item.type]}</span>
                   {item.link ? (
                     <a href={item.link} className="hover:text-blue-600">
                       {item.value}
