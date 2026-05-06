@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { AuthProvider } from "@/context/AuthContext";
 
 export const metadata = {
   title: "Content Broadcasting System",
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
         <header>
           <Navbar />
         </header>
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <AuthProvider>{children}</AuthProvider>
+        </main>
         <div>
           <Footer />
         </div>

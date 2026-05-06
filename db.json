@@ -1,0 +1,107 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "principal@school.com",
+      "password": "password123",
+      "role": "principal",
+      "name": "Mr. Principal"
+    },
+    {
+      "id": 2,
+      "email": "teacher@school.com",
+      "password": "password123",
+      "role": "teacher",
+      "name": "Ms. Teacher"
+    },
+    {
+      "id": 3,
+      "email": "teacher2@school.com",
+      "password": "password123",
+      "role": "teacher",
+      "name": "Mr. Smith"
+    }
+  ],
+  "content": [
+    {
+      "id": 1,
+      "teacherId": 2,
+      "teacherName": "Ms. Teacher",
+      "title": "Introduction to Algebra",
+      "subject": "Mathematics",
+      "description": "Basic algebraic concepts for grade 8",
+      "fileUrl": "https://picsum.photos/seed/math/800/600",
+      "fileType": "image/jpeg",
+      "status": "approved",
+      "startTime": "2026-05-06T08:00:00.000Z",
+      "endTime": "2026-05-06T18:00:00.000Z",
+      "rotationDuration": 30,
+      "rejectionReason": null,
+      "createdAt": "2026-05-05T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "teacherId": 2,
+      "teacherName": "Ms. Teacher",
+      "title": "Photosynthesis Process",
+      "subject": "Biology",
+      "description": "How plants make food using sunlight",
+      "fileUrl": "https://picsum.photos/seed/bio/800/600",
+      "fileType": "image/jpeg",
+      "status": "pending",
+      "startTime": "2026-05-07T09:00:00.000Z",
+      "endTime": "2026-05-07T17:00:00.000Z",
+      "rotationDuration": 20,
+      "rejectionReason": null,
+      "createdAt": "2026-05-05T11:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "teacherId": 3,
+      "teacherName": "Mr. Smith",
+      "title": "World War II Overview",
+      "subject": "History",
+      "description": "Key events of World War II",
+      "fileUrl": "https://picsum.photos/seed/history/800/600",
+      "fileType": "image/jpeg",
+      "status": "rejected",
+      "startTime": "2026-05-06T10:00:00.000Z",
+      "endTime": "2026-05-06T15:00:00.000Z",
+      "rotationDuration": 15,
+      "rejectionReason": "Content is not curriculum aligned. Please revise.",
+      "createdAt": "2026-05-04T09:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "teacherId": 2,
+      "teacherName": "Ms. Teacher",
+      "title": "Newton Laws of Motion",
+      "subject": "Physics",
+      "description": "Understanding the three laws",
+      "fileUrl": "https://picsum.photos/seed/physics/800/600",
+      "fileType": "image/jpeg",
+      "status": "pending",
+      "startTime": "2026-05-08T08:00:00.000Z",
+      "endTime": "2026-05-08T16:00:00.000Z",
+      "rotationDuration": 25,
+      "rejectionReason": null,
+      "createdAt": "2026-05-05T14:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "teacherId": 3,
+      "teacherName": "Mr. Smith",
+      "title": "Chemical Bonding",
+      "subject": "Chemistry",
+      "description": "Ionic and covalent bonds explained",
+      "fileUrl": "https://picsum.photos/seed/chem/800/600",
+      "fileType": "image/jpeg",
+      "status": "approved",
+      "startTime": "2026-05-06T07:00:00.000Z",
+      "endTime": "2026-05-06T20:00:00.000Z",
+      "rotationDuration": 20,
+      "rejectionReason": null,
+      "createdAt": "2026-05-04T08:00:00.000Z"
+    }
+  ]
+}
