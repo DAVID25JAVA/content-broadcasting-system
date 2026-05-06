@@ -39,7 +39,7 @@ function Page() {
       setIsLoading(true);
       setServerError("");
       const response = await authService.login(data.email, data.password);
-      console.log("response--->", response);
+      // console.log("response--->", response);
       login(response.user, response.token);  
     } catch (error) {
       setServerError("Invalid email or password. Please try again.");
