@@ -1,5 +1,4 @@
 'use client';
-
 import Wrapper from "@/components/Wrapper";
 import React, { useState } from "react";
 import { User, Mail, Lock, Loader2, AlertCircle } from "lucide-react";
@@ -40,6 +39,7 @@ function Page() {
       setIsLoading(true);
       setServerError("");
       const response = await authService.login(data.email, data.password);
+      console.log("response--->", response);
       login(response.user, response.token);  
     } catch (error) {
       setServerError("Invalid email or password. Please try again.");
@@ -47,6 +47,9 @@ function Page() {
       setIsLoading(false);
     }
   };
+
+ 
+  
 
   return (
     <Wrapper>
@@ -148,7 +151,7 @@ function Page() {
             <p> Teacher: teacher@school.com / password123</p>
           </div>
 
-          {/* ✅ Submit Button with Loading */}
+          
           <button
             type="submit"
             disabled={isLoading}

@@ -26,7 +26,9 @@ export function AuthProvider({ children }) {
     setToken(tokenData);
     localStorage.setItem("token", tokenData);
     localStorage.setItem("user", JSON.stringify(userData));
-    document.cookie = `token=${tokenData}; path=/`;
+
+    document.cookie = `token=${tokenData}; path=/; max-age=86400`;
+    document.cookie = `role=${userData.role}; path=/; max-age=86400`;
 
     if (userData.role === "principal") {
       router.push("/principal/dashboard");
@@ -41,6 +43,7 @@ export function AuthProvider({ children }) {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
     document.cookie = "token=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+    document.cookie = "role=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT";
     router.push("/login");
   };
 

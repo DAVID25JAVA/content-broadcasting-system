@@ -11,6 +11,9 @@ import {
   Landmark,
   Layers,
   Home,
+  LayoutDashboard,
+  Upload,
+  File,
 } from "lucide-react";
 
 export const img = {
@@ -121,4 +124,10 @@ export const categoriesData = [
     title: "Interior Design",
     icon: <Home />,
   },
+];
+
+export const teacherSidebarItems = [
+  { label: 'Dashboard', href: '/teacher/dashboard', icon: <LayoutDashboard/> },
+  { label: 'Upload Content', href: '/teacher/upload', icon: <Upload/> },
+  { label: 'My Content', href: '/teacher/my-content', icon:  <File/> },
 ];
